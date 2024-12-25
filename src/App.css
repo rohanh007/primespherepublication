@@ -6,6 +6,3 @@
     -ms-overflow-style: none;  
     scrollbar-width: none; 
 }
-html, body {
-    overflow: hidden; /* Disables scrolling */
-  }

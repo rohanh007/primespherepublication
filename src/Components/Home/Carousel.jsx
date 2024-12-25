@@ -35,7 +35,7 @@ const Carousel = () => {
   return ( 
     <div className="relative w-full">
       {/* Carousel Wrapper */}
-      <div className="relative h-56 overflow-hidden  md:h-[75vh]">
+      <div className="relative h-[88vh] overflow-hidden">
         {slides.map((slide, index) => (
           
           <div
