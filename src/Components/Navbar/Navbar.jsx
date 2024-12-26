@@ -7,8 +7,8 @@ const Navbar = () => {
     const [isActive, setActive] = useState(false);
 
     return (
-        <div className="flex flex-col sticky top-0 z-50">
-            <div className="flex justify-between items-center py-3 px-5 md:px-24  bg-white shadow-md">
+        <div className="w-full flex flex-col fixed top-0 z-50">
+            <div className="flex justify-between items-center py-2 px-5 md:px-24  bg-white shadow-md">
                 <Link to="/">
                     <img
                         src={logo}

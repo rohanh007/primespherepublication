@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Carousel from "./Carousel";
 import Ourservices from "./Ourservices";
+import AboutUsPreview from "./AboutUsPreview";
 
 const Home = () => {
     return (
-        <div className="w-full h-[88vh] relative ">
-        <div className="flex flex-col gap-3 w-[80%] sm:w-[50%] absolute z-20 custom:top-[25%] top-[20%] lg:top-[30%]  left-[7%]">
+        <div className="w-full h-screen relative">
+          {/* <Navbar/> */}
+        <div className="flex flex-col gap-3 w-[80%] sm:w-[50%] absolute z-20 custom:top-[35%] top-[30%] lg:top-[45%]  left-[7%]">
             <div className="border-l-[6px] border-l-red-500 pl-5 py-3">
               <h1 className="text-4xl font-bold text-red-500">Prime Sphere Publication Services</h1>
             </div>
@@ -15,11 +17,16 @@ const Home = () => {
                 <Link to='/' className="text-red-500 font-semibold">Contact Us</Link>
             </div>
         </div>
-        <div className="w-full h-[88vh] relative z-10">
+        <div className="w-full h-screen relative z-10">
           <Carousel />
         </div>
 
-        <Ourservices/>
+        {/* about us preview */}
+        <div>
+          <AboutUsPreview/>
+        </div>
+
+        {/* <Ourservices/> */}
       </div>
       
     )

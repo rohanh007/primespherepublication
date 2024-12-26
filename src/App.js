@@ -10,6 +10,7 @@ import Publications from './Components/Publications/Publications';
 function App() {
   return (
     <div className="App no-scrollbar relative">
+      
       <BrowserRouter>
       <Navbar/>
       <Routes>
