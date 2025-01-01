@@ -20,7 +20,7 @@ import RefundPolicy from './Components/Publications/RefundPolicy.jsx';
 
 function App() {
   return (
-    <div className="App no-scrollbar min-h-screen">
+    <div className="App no-scrollbar relative">
       
       <BrowserRouter>
       <Scrolltop/>
