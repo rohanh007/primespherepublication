@@ -8,6 +8,12 @@ module.exports = {
       screens: {
         custom: '530px', 
       },
+      backgroundColor:{
+        primary:'',
+      },
+      textColor:{
+        primary:''
+      }
     },
   },
   plugins: [],

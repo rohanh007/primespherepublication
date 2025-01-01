@@ -6,3 +6,17 @@
     -ms-overflow-style: none;  
     scrollbar-width: none; 
 }
+
+.bg-servicehero{
+    background-image: url('../public/Services/servicehero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-contact{
+    background-image: url('../public/Contact/bg_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
