@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import logo from '../../Static/primesphere_original.png';
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { useState } from 'react';
 
@@ -12,7 +11,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center py-2 px-5 md:px-24 bg-white shadow-md">
                 <Link to="/">
                     <img
-                        src={logo}
+                        src="primesphere_original.png"
                         alt="Primesphere Publication"
                         className="max-w-[130px] max-h-[50px] sm:max-w-[200px] sm:max-h-[70px]"
                     />
