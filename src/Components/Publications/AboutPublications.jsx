@@ -1,6 +1,6 @@
 const AboutPublications=()=>{
     return(
-        <div className=" py-16 px-4 sm:px-8 pt-28 relative overflow-hidden">
+        <div className=" py-16 px-4 sm:px-8 pt-32 relative overflow-hidden">
          
          <div className="absolute -right-[20%] top-10 h-[60vh] max-w-2xl z-10 hidden md:flex  ">
                     <svg aria-hidden="true" width="707" height="943" viewBox="0 0 707 943" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,9 +26,9 @@ const AboutPublications=()=>{
             <div className="w-1/2">
             <div className="flex justify-center mb-10">
           <img
-            src="your-image-url-here.jpg" // Replace with your image URL
+            src="/Aboutus/primespherecompanyai.jpeg"
             alt="Publication Process"
-            className="rounded-lg shadow-lg max-w-full h-auto"
+            className="rounded-lg shadow-lg max-w-full h-96"
           />
         </div>
             </div>
