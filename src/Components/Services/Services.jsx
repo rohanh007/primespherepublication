@@ -57,11 +57,11 @@ const servicesData = [
 // ServiceCard component
 const ServiceCard = ({ title, description, icon }) => {
   return (
-    <div className="bg-white pt-8 md:pt-0 h-[250px] md:h-auto shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+    <div className="bg-white pt-8 md:pt-0  h-auto sm:h-[250px] md:h-auto shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
       <div className="flex  p-4">
-        <div className="text-4xl text-red-500 mr-4">{icon}</div>
+        <div className="text-2xl sm:text-4xl text-red-500 mr-4">{icon}</div>
         <div>
-          <h3 className="text-xl tracking-wide font-bold text-gray-800">{title}</h3>
+          <h3 className="text-lg sm:text-xl tracking-wide font-bold text-gray-800">{title}</h3>
           <p className="text-gray-600 mt-2">{description}</p>
         </div>
       </div>
@@ -75,14 +75,14 @@ const ServicesPage = () => {
   const otherServices = servicesData.slice(3); // Remaining services
 
   return (
-    <div className="w-full min-h-screen relative">
+    <div className="w-full min-h-screen relative pt-12">
       {/* Summary section */}
-      <div className="flex flex-col items-start justify-center text-center w-full h-[70vh] bg-red-400 pt-14 px-16 bg-servicehero ">
+      <div className="flex flex-col items-start justify-center text-center w-full h-[80vh] sm:h-[70vh] bg-red-400 px-4 sm:px-16 bg-servicehero ">
         <div className='py-2 border-l-8 border-l-red-600 pl-4 mb-2'>
-        <h1 className="text-4xl font-bold text-black ">Our Services</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold text-black ">Our Services</h1>
         </div>
-        <p className="text-black font-semibold max-w-[80%] text-[18px] text-left">
-        Primesphere Publication offers a wide range of services, including research article publication, research guidance, conference proceedings, DOI services, Open Journal Systems (OJS), web development, digital marketing, copy editing, and formatting, among others. We are dedicated to providing professional solutions for researchers and collaborators.
+        <p className="text-black  max-w-full sm:max-w-[80%] text-sm sm:text-[18px] text-left">
+          Primesphere Publication offers a wide range of services, including research article publication, research guidance, conference proceedings, DOI services, Open Journal Systems (OJS), web development, digital marketing, copy editing, and formatting, among others. We are dedicated to providing professional solutions for researchers and collaborators.
         </p>
       </div>
 
@@ -97,9 +97,9 @@ const ServicesPage = () => {
       </div> */}
 
       {/* Top services section */}
-      <div className="container mx-auto px-16 py-8">
+      <div className="container sm:mx-auto px-0 sm:px-16 py-8">
         {/* <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Top Services</h2> */}
-        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 mt-5 px-8 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 mt-5 px-6 md:px-0">
           {topServices.map((service) => (
             <ServiceCard key={service.id} {...service} />
           ))}
@@ -107,11 +107,11 @@ const ServicesPage = () => {
       </div>
 
       {/* Other services section */}
-      <div className="container mx-auto px-16 py-8">
+      <div className="container sm:mx-auto px-4 sm:px-16 py-8">
         <div className='border-l-8 border-l-red-600 pl-4 py-2 mb-9'>
-          <h2 className="text-3xl font-bold text-gray-800">Other Services</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Other Services</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 md:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-0">
           {otherServices.map((service) => (
             <ServiceCard key={service.id} {...service} />
           ))}
