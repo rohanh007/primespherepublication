@@ -44,10 +44,10 @@ const ContactUs = () => {
   };
 
   return (
-    <div className=" h-[94vh] bg-contact relative top-10 ">
-      <div className="bg-red-500 bg-opacity-75 flex flex-col md:flex-row justify-center h-[94vh]">
+    <div className="h-auto md:h-[94vh] bg-contact relative top-10 ">
+      <div className="bg-red-500 bg-opacity-75 flex flex-col md:flex-row justify-center h-fit md:h-[94vh]">
         {/* Left Side: Contact Form */}
-        <div className="w-full md:w-[40%] bg-white my-16  flex items-center justify-center  p-6 md:p-10">
+        <div className="w-full md:w-[40%] bg-white md:my-16  flex items-center justify-center  p-4 ">
           <form className="w-full p-6">
             <h2 className="text-2xl font-bold text-black mb-4">Contact Us</h2>
 
@@ -122,7 +122,7 @@ const ContactUs = () => {
         </div>
 
         {/* Right Side: Company Details */}
-        <div className="w-full md:w-[50%] flex flex-col items-center justify-center gap-3 px-12 md:p-10 text-black">
+        <div className="w-full md:w-[50%] flex flex-col items-center justify-center gap-1 md:gap-3 px-12 p-6 text-black">
           <div className="text-center space-y-4">
             <h2 className="text-3xl font-bold">Prime Sphere</h2>
             <p className="text-gray-100">
@@ -134,13 +134,13 @@ const ContactUs = () => {
             <div className="flex items-center space-x-3">
               <FaPhone className="text-xl" />
               <Link to="#" onClick={handlePhoneClick} className="text-white hover:underline text-black">
-                +91 9766986484
+              +91 8275592369
               </Link>
             </div>
             <div className="flex items-center space-x-3">
               <FaEnvelope className="text-xl" />
               <Link to="#" onClick={handleEmailClick} className="text-white hover:underline text-black">
-                primesphere@company.com
+              primespherepublication@gmail.com
               </Link>
             </div>
           </div>

@@ -27,7 +27,7 @@ const Home = () => {
       <AboutUsPreview />
       {/* Our services preview */}
       <ServicesPreview />
-      <div className="w-full pb-10 px-16">
+      <div className="w-full pb-10 md:px-16">
       <ContactUs/>
       </div>
     

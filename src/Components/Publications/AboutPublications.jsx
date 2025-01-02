@@ -1,6 +1,6 @@
 const AboutPublications=()=>{
     return(
-        <div className=" py-16 px-4 sm:px-8 pt-32 relative overflow-hidden">
+        <div className=" py-16 md:px-16 px-8 pt-32 relative overflow-hidden">
          
          <div className="absolute -right-[20%] top-10 h-[60vh] max-w-2xl z-10 hidden md:flex  ">
                     <svg aria-hidden="true" width="707" height="943" viewBox="0 0 707 943" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@ const AboutPublications=()=>{
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
           Welcome to Prime Sphere Publication
         </h2>
-        <p className="text-base sm:text-lg text-gray-700 mb-10">
+        <p className="text-base sm:text-lg text-gray-700 mb-10 text-start">
           Prime Sphere Publication is a leading provider of scholarly article
           publishing and consultation services. We assist researchers in getting
           their work published in top-tier journals indexed in databases like
@@ -22,8 +22,8 @@ const AboutPublications=()=>{
           platforms.
         </p>
         
-        <div className="w-full flex flex-row">
-            <div className="w-1/2">
+        <div className="w-full flex flex-col md:flex-row gap-4">
+            <div className="w-full md:w-1/2">
             <div className="flex justify-center mb-10">
           <img
             src="/Aboutus/primespherecompanyai.jpeg"
@@ -32,7 +32,7 @@ const AboutPublications=()=>{
           />
         </div>
             </div>
-        <div className="max-w-2xl  space-y-6 text-left w-1/2">
+        <div className="max-w-2xl   space-y-6 text-left w-full md:w-1/2">
           <p className="text-base sm:text-lg text-gray-700">
             Our expert panel evaluates your articles meticulously, ensuring they
             align with the standards of peer-reviewed journals. We offer complete

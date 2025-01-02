@@ -37,9 +37,9 @@ const PrivacyPolicy = () => {
   ];
 
   return (
-    <div className="w-full px-16 py-12 pt-28">
-      <div className="py-4 border-l-4 border-l-red-600 pl-3 mb-6">
-        <h1 className="text-4xl font-bold text-gray-900">Privacy Policy</h1>
+    <div className="w-full px-8 md:px-16 py-12 pt-28">
+      <div className="py-4 border-l-8 border-l-red-600 pl-3 mb-6">
+        <h1 className="text-xl md:text-4xl font-bold text-gray-900">Privacy Policy</h1>
       </div>
 
       <div className="flex flex-col gap-8">

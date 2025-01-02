@@ -10,9 +10,9 @@ const CallForPaper=()=>{
       };
     
       return (
-        <div className="w-full px-16 py-12 pt-32">
+        <div className="w-full px-8 md:px-16 py-12 pt-32">
           <div className="py-4 border-l-8 border-l-red-400 pl-3 mb-6">
-            <h1 className="text-3xl font-bold text-black">{content.heading}</h1>
+            <h1 className="text-xl md:text-3xl font-bold text-black">{content.heading}</h1>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* <div className="flex-shrink-0">

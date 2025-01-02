@@ -29,9 +29,9 @@ const RefundPolicy = () => {
   ];
 
   return (
-    <div className="w-full px-16 py-12 pt-28 ">
+    <div className="w-full px-8 md:px-16 py-12 pt-28 ">
       <div className="py-4 border-l-8 border-l-red-600 pl-3 mb-8">
-        <h1 className="text-4xl font-bold text-gray-900">Refund Policy</h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-gray-900">Refund Policy</h1>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -40,8 +40,8 @@ const RefundPolicy = () => {
             key={index}
             className="bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-xl font-semibold text-red-600">{section.title}</h2>
+            <div className="flex items-center justify-between mb-4 gap-2">
+              <h2 className="text-lg md:text-xl font-semibold text-red-600">{section.title}</h2>
               <span className="text-sm text-gray-500">#{index + 1}</span>
             </div>
             <p className="text-base text-gray-700 leading-relaxed">{section.description}</p>
