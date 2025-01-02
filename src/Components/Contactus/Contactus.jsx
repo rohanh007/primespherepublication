@@ -20,7 +20,7 @@ const ContactUs = () => {
   };
 
   const handlePhoneClick = () => {
-    window.location.href = "tel:+919766986484";
+    window.location.href = "tel:+918275592369";
   };
 
   const handleSubmit = (e) => {
