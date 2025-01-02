@@ -25,7 +25,7 @@ const Navbar = () => {
                         onMouseLeave={() => setDropdownActive(false)}
                     >
                         <Link
-                            to="/Publications"
+                            to="#"
                             onMouseEnter={() => setDropdownActive(true)}
                             className="hover:text-red-500 text-lg flex items-center"
                         >

@@ -5,7 +5,7 @@ import Home from './Components/Home/Home';
 import Services from './Components/Services/Services';
 import Aboutus from './Components/Aboutus/Aboutus';
 import { BrowserRouter as Router, Routes,Route, BrowserRouter } from 'react-router-dom';
-import Publications from './Components/Publications/Publications';
+// import Publications from './Components/Publications/Publications';
 import ServicesPage from './Components/Services/Services.jsx';
 import ContactUs from './Components/Contactus/Contactus.jsx';
 import Scrolltop from './Components/Scrolltop/Scrolltop.jsx';
@@ -28,7 +28,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/services' element={<ServicesPage/>}/>
-        <Route path='/Publications' element={<Publications/>}/>
+        {/* <Route path='/Publications' element={<Publications/>}/> */}
         <Route path='/aboutus' element={<Aboutus/>}/>
         <Route path='/corporate-social-responsibility' element={<CorpSocialResp/>}/>
         <Route path='/about-publication' element={<AboutPublications/>}/>
