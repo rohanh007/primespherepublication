@@ -12,7 +12,7 @@ import Scrolltop from './Components/Scrolltop/Scrolltop.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import CorpSocialResp from './Components/Aboutus/CorpSocialResp.jsx';
 import AboutPublications from './Components/Publications/AboutPublications.jsx';
-import Journals from './Components/Publications/Journals.jsx';
+import JournalsList from './Components/Publications/JournalsList.jsx';
 import SubmitArticles from './Components/Publications/SubmitArticles.jsx';
 import CallForPaper from './Components/Publications/CallForPaper.jsx';
 import PrivacyPolicy from './Components/Publications/PrivacyPolicy.jsx';
@@ -32,7 +32,7 @@ function App() {
         <Route path='/aboutus' element={<Aboutus/>}/>
         <Route path='/corporate-social-responsibility' element={<CorpSocialResp/>}/>
         <Route path='/about-publication' element={<AboutPublications/>}/>
-        <Route path='/journals' element={<Journals/>}/>
+        <Route path='/journallist' element={<JournalsList/>}/>
         <Route path='/submit-articles' element={<SubmitArticles/>}/>
         <Route path='/call-for-paper' element={<CallForPaper/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>

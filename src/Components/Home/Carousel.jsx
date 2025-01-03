@@ -8,8 +8,8 @@ const Carousel = () => {
 
   const slides = [
    "/Slider/slider_1.webp",
-   "/Slider/slide_2.jpg",
-   "/Slider/slide_3.jpg",
+   "/Slider/slide_2.webp",
+   "/Slider/slide_3.webp",
   ];
 
   useEffect(() => {

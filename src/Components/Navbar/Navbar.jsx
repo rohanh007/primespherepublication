@@ -11,7 +11,7 @@ const Navbar = () => {
             <div className="flex justify-between items-center py-2 px-5 md:px-24 bg-white shadow-md">
                 <Link to="/">
                     <img
-                        src="primesphere_original.png"
+                        src="/primesphere_original.png"
                         alt="Primesphere Publication"
                         className="max-w-[130px] max-h-[50px] sm:max-w-[200px] sm:max-h-[70px]"
                     />
@@ -39,7 +39,7 @@ const Navbar = () => {
                                     About Publication
                                 </Link>
                                 <Link
-                                    to="/journals"
+                                    to="/journallist"
                                     className="block px-4 py-2 hover:bg-gray-200"
                                 >
                                     Journals
@@ -89,7 +89,7 @@ const Navbar = () => {
                     onClick={() => setActive(false)}
                 >
                     <Link to="/services" className="hover:text-orange-700">Services</Link>
-                    <Link to="/Publications" className="hover:text-red-500">Publication</Link>
+                    <Link to="#" className="hover:text-red-500">Publication</Link>
                     <Link to="/aboutus" className="hover:text-red-500">About Us</Link>
                     <Link to="/contactus" className="hover:text-red-500">Contact Us</Link>
                 </div>

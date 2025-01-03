@@ -17,7 +17,7 @@ const Aboutus = () => {
                 </div>
 
                 <div className="max-w-full md:max-w-[40%] relative z-20 pt-4 flex justify-center p-6">
-                    <img src='/Aboutus/aboutuspage.jpg' className="flex-1" />
+                    <img src='/Aboutus/aboutuspage.webp' className="flex-1" />
                 </div>
 
                 <div className="absolute -right-[20%] top-10 h-[60vh] max-w-2xl z-10 hidden md:flex ">
