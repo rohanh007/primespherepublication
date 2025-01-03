@@ -77,7 +77,7 @@ const ServicesPage = () => {
   return (
     <div className="w-full min-h-screen relative pt-12">
       {/* Summary section */}
-      <div className="flex flex-col items-start justify-center text-center w-full h-[80vh] sm:h-[70vh] bg-red-400 px-4 sm:px-16 bg-servicehero ">
+      <div className="flex flex-col items-start justify-center text-center w-full h-[80vh] sm:h-[70vh] px-4 sm:px-16 bg-servicehero ">
         <div className='py-2 border-l-8 border-l-red-600 pl-4 mb-2'>
           <h1 className="text-2xl sm:text-4xl font-bold text-black ">Our Services</h1>
         </div>
