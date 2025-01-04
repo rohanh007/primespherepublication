@@ -1,11 +1,36 @@
 import { Link } from 'react-router-dom';
 import { IoReorderThreeOutline } from "react-icons/io5";
-import { useState } from 'react';
+import { useState,useRef, useEffect } from 'react';
 
 const Navbar = () => {
     const [isActive, setActive] = useState(false);
     const [isDropdownActive, setDropdownActive] = useState(false);
+    const hoverEffect=useRef(null);
 
+    useEffect(()=>{
+      const element=hoverEffect.current;
+      console.log(isDropdownActive);
+      const handleMouseEnter=()=>{
+        setDropdownActive(true);
+      }
+      const handleMouseLeave=()=>{
+        setTimeout(() => {
+            setDropdownActive(false);
+        }, 1000);
+      }
+
+      element.addEventListener("mouseenter", handleMouseEnter);
+      element.addEventListener("mouseleave", handleMouseLeave);
+
+      return () => {
+        element.removeEventListener("mouseenter", handleMouseEnter);
+        element.removeEventListener("mouseleave", handleMouseLeave);
+      };
+
+
+    },[])
+
+    
     return (
         <div className="w-full flex flex-col fixed top-0 z-50">
             <div className="flex justify-between items-center py-2 px-5 md:px-24 bg-white shadow-md">
@@ -20,13 +45,14 @@ const Navbar = () => {
                     <Link to="/services" className="hover:text-red-500 text-lg">Services</Link>
                     <div
                         className="relative group"
-                        onMouseEnter={() => setDropdownActive(true)}
-                        onMouseLeave={() => setDropdownActive(false)}
+                        // onMouseEnter={() => setDropdownActive(true)}
                     >
                         <Link
                             to="#"
-                            onMouseEnter={() => setDropdownActive(true)}
+                            // onMouseEnter={() => setDropdownActive(true)}
+                            // onMouseLeave={() => setDropdownActive(false)}
                             className="hover:text-red-500 text-lg flex items-center"
+                            ref={hoverEffect}
                         >
                             Publication
                         </Link>
