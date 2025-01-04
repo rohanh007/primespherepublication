@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { IoSearch } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import _ from "lodash";
 
 const Journallist = () => {
   const [query, setQuery] = useState("");
   const [journals, setJournals] = useState([]);
+  // const [jorunalId, setJournalId]=useState(null);
   const [filteredJournals, setFilteredJournals] = useState([]);
+
+     const navigate=useNavigate()
+
+  // const handledetails=(id, data)=>{
+  //   navigate(`/journal/${id}`);
+  // }
 
   useEffect(() => {
     fetch("http://localhost:4300/api/journallist") 
@@ -17,8 +24,6 @@ const Journallist = () => {
       .catch((error) => console.error("Error fetching journals:", error));
   }, []);
 
-  console.log(journals);
-  console.log(filteredJournals);
   useEffect(() => {
     if (query.trim() === "") {
       setFilteredJournals(journals);
@@ -65,7 +70,10 @@ const Journallist = () => {
               )}
               </div>
               <div className="absolute z-20  right-10 bottom-5">
-              <Link>Details</Link>
+              <Link to={`/journal/${journal.E_ISSN}`} className="btn btn-primary px-6 py-2 bg-red-500 rounded-md text-white" onClick={()=>{
+                const id=journal.E_ISSN;
+                // handledetails(id);
+              }}>Details</Link>
               </div>
             </div>
           ))
