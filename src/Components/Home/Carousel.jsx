@@ -33,7 +33,7 @@ const Carousel = () => {
   };
 
   return ( 
-    <div className="relative w-full">
+    <div className="relative w-full ">
       {/* Carousel Wrapper */}
       <div className="relative h-screen overflow-hidden">
         {slides.map((slide, index) => (
@@ -48,7 +48,7 @@ const Carousel = () => {
             <img
               src={slide}
               alt={`Slide ${index + 1}`}
-              className="block w-full h-full object-cover blur-[4px]"
+              className="block w-full h-full object-cover blur-[4px] brightness-50"
             />
           </div>
         ))}

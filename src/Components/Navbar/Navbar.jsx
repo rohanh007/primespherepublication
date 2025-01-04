@@ -16,7 +16,7 @@ const Navbar = () => {
       const handleMouseLeave=()=>{
         setTimeout(() => {
             setDropdownActive(false);
-        }, 1000);
+        }, 3000);
       }
 
       element.addEventListener("mouseenter", handleMouseEnter);
@@ -65,17 +65,17 @@ const Navbar = () => {
                                     About Publication
                                 </Link>
                                 <Link
-                                    to="/journallist"
+                                    to="/journals"
                                     className="block px-4 py-2 hover:bg-gray-200"
                                 >
                                     Journals
                                 </Link>
-                                <Link
+                                {/* <Link
                                     to="/submit-articles"
                                     className="block px-4 py-2 hover:bg-gray-200"
                                 >
                                     Submit Articles
-                                </Link>
+                                </Link> */}
                                 <Link
                                     to="/call-for-paper"
                                     className="block px-4 py-2 hover:bg-gray-200"

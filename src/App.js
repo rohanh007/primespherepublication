@@ -17,6 +17,7 @@ import SubmitArticles from './Components/Publications/SubmitArticles.jsx';
 import CallForPaper from './Components/Publications/CallForPaper.jsx';
 import PrivacyPolicy from './Components/Publications/PrivacyPolicy.jsx';
 import RefundPolicy from './Components/Publications/RefundPolicy.jsx';
+import JournalDetail from './Components/Publications/JournalDetail.jsx';
 
 function App() {
   return (
@@ -32,12 +33,14 @@ function App() {
         <Route path='/aboutus' element={<Aboutus/>}/>
         <Route path='/corporate-social-responsibility' element={<CorpSocialResp/>}/>
         <Route path='/about-publication' element={<AboutPublications/>}/>
-        <Route path='/journallist' element={<JournalsList/>}/>
-        <Route path='/submit-articles' element={<SubmitArticles/>}/>
+        <Route path='/journals' element={<JournalsList/>}/>
+        {/* <Route path='/submit-articles' element={<SubmitArticles/>}/> */}
         <Route path='/call-for-paper' element={<CallForPaper/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
         <Route path='/refund-policy' element={<RefundPolicy/>}/>
-        <Route path='/contactus' element={<ContactUs/>}/>
+        <Route path='/contactus' element={<ContactUs/>}/> 
+         {/* journal details route  */}
+        <Route path="/journal/:id" element={<JournalDetail/>} />
       </Routes>
       <Footer/>
       </BrowserRouter>
