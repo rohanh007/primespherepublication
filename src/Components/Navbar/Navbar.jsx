@@ -1,36 +1,12 @@
 import { Link } from 'react-router-dom';
 import { IoReorderThreeOutline } from "react-icons/io5";
-import { useState,useRef, useEffect } from 'react';
+import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import { useState } from 'react';
 
 const Navbar = () => {
     const [isActive, setActive] = useState(false);
     const [isDropdownActive, setDropdownActive] = useState(false);
-    const hoverEffect=useRef(null);
 
-    useEffect(()=>{
-      const element=hoverEffect.current;
-      console.log(isDropdownActive);
-      const handleMouseEnter=()=>{
-        setDropdownActive(true);
-      }
-      const handleMouseLeave=()=>{
-        setTimeout(() => {
-            setDropdownActive(false);
-        }, 3000);
-      }
-
-      element.addEventListener("mouseenter", handleMouseEnter);
-      element.addEventListener("mouseleave", handleMouseLeave);
-
-      return () => {
-        element.removeEventListener("mouseenter", handleMouseEnter);
-        element.removeEventListener("mouseleave", handleMouseLeave);
-      };
-
-
-    },[])
-
-    
     return (
         <div className="w-full flex flex-col fixed top-0 z-50">
             <div className="flex justify-between items-center py-2 px-5 md:px-24 bg-white shadow-md">
@@ -41,21 +17,20 @@ const Navbar = () => {
                         className="max-w-[130px] max-h-[50px] sm:max-w-[200px] sm:max-h-[70px]"
                     />
                 </Link>
-                <div className="hidden md:flex space-x-8  font-semibold">
-                    <Link to="/services" className="hover:text-red-500 text-lg">Services</Link>
-                    <div
-                        className="relative group"
-                        // onMouseEnter={() => setDropdownActive(true)}
-                    >
-                        <Link
-                            to="#"
-                            // onMouseEnter={() => setDropdownActive(true)}
-                            // onMouseLeave={() => setDropdownActive(false)}
+                <div className="hidden md:flex space-x-8 font-semibold">
+                    <Link to="/services" className="hover:text-red-500 text-lg">
+                        Services
+                    </Link>
+                    <div className="relative group">
+                        <button
                             className="hover:text-red-500 text-lg flex items-center"
-                            ref={hoverEffect}
+                            onClick={() => setDropdownActive(!isDropdownActive)}
                         >
                             Publication
-                        </Link>
+                            {/* <span className="ml-2">
+                                {isDropdownActive ? <AiOutlineUp /> : <AiOutlineDown />}
+                            </span> */}
+                        </button>
                         {isDropdownActive && (
                             <div className="absolute top-full mt-2 w-48 bg-white shadow-md border rounded-md">
                                 <Link
@@ -70,12 +45,6 @@ const Navbar = () => {
                                 >
                                     Journals
                                 </Link>
-                                {/* <Link
-                                    to="/submit-articles"
-                                    className="block px-4 py-2 hover:bg-gray-200"
-                                >
-                                    Submit Articles
-                                </Link> */}
                                 <Link
                                     to="/call-for-paper"
                                     className="block px-4 py-2 hover:bg-gray-200"
@@ -97,8 +66,12 @@ const Navbar = () => {
                             </div>
                         )}
                     </div>
-                    <Link to="/aboutus" className="hover:text-red-500 text-lg">About Us</Link>
-                    <Link to="/contactus" className="hover:text-red-500 text-lg">Contact Us</Link>
+                    <Link to="/aboutus" className="hover:text-red-500 text-lg">
+                        About Us
+                    </Link>
+                    <Link to="/contactus" className="hover:text-red-500 text-lg">
+                        Contact Us
+                    </Link>
                 </div>
                 <button
                     className="md:hidden"
@@ -110,16 +83,49 @@ const Navbar = () => {
                 </button>
             </div>
             {isActive && (
-                <div
-                    className="flex flex-col items-center w-full h-screen space-y-6 py-60 px-5 md:hidden bg-orange-300 bg-opacity-75 absolute font-extrabold text-4xl text-white"
-                    onClick={() => setActive(false)}
-                >
-                    <Link to="/services" className="hover:text-orange-700">Services</Link>
-                    <Link to="#" className="hover:text-red-500">Publication</Link>
-                    <Link to="/aboutus" className="hover:text-red-500">About Us</Link>
-                    <Link to="/contactus" className="hover:text-red-500">Contact Us</Link>
+                <div className="fixed top-0 right-0 h-screen w-full custom:w-[70%] bg-white shadow-lg z-50 flex flex-col justify-start py-10 px-6 space-y-6 md:hidden font-semibold">
+                    <Link to="/services" className="text-lg border-b-2 pb-2" onClick={() => setActive(false)}>
+                        Services
+                    </Link>
+                    <div className="w-full">
+                        <button
+                            className="w-full flex justify-start items-center text-lg pb-2 border-b-2"
+                            onClick={() => setDropdownActive(!isDropdownActive)}
+                        >
+                            Publication
+                            <span className="ml-2">
+                                {isDropdownActive ? <AiOutlineUp /> : <AiOutlineDown />}
+                            </span>
+                        </button>
+                        {isDropdownActive && (
+                            <div className="flex flex-col space-y-2 ml-4 text-sm">
+                                <Link to="/about-publication" onClick={() => setActive(false)}>
+                                    About Publication
+                                </Link>
+                                <Link to="/journals" onClick={() => setActive(false)}>
+                                    Journals
+                                </Link>
+                                <Link to="/call-for-paper" onClick={() => setActive(false)}>
+                                    Call For Paper
+                                </Link>
+                                <Link to="/privacy-policy" onClick={() => setActive(false)}>
+                                    Privacy Policy
+                                </Link>
+                                <Link to="/refund-policy" onClick={() => setActive(false)}>
+                                    Refund Policy
+                                </Link>
+                            </div>
+                        )}
+                    </div>
+                    <Link to="/aboutus" className="text-lg border-b-2 pb-2" onClick={() => setActive(false)}>
+                        About Us
+                    </Link>
+                    <Link to="/contactus" className="text-lg border-b-2 pb-2" onClick={() => setActive(false)}>
+                        Contact Us
+                    </Link>
                 </div>
             )}
+
         </div>
     );
 };
