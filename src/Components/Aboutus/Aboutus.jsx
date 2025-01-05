@@ -6,12 +6,12 @@ import CommitteeMembers from "./CommitteeMembers";
 const Aboutus = () => {
     return (
         <div className=" w-full ">
-            <div className="flex flex-col md:flex-row items-center  md:justify-center h-auto md:h-[70vh] bg-red-50 pb-14 md:pb-0 md:pt-14 pt-28 px-16 relative overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center  md:justify-center h-auto md:h-[70vh] bg-red-50 pb-14 md:pb-0 md:pt-14 pt-28 px-6 custom:px-16 relative overflow-hidden">
                 <div className="flex flex-col max-w-full md:max-w-[60%] relative z-20 ">
                     <div className='py-2 border-l-8 border-l-red-600 pl-4 mb-3'>
-                        <h1 className=" text-2xl md:text-4xl font-bold text-black ">About us</h1>
+                        <h1 className=" text-2xl md:text-4xl font-bold text-black font-serif">About us</h1>
                     </div>
-                    <p className="text-black text-base md:text-[18px] text-left flex-1">
+                    <p className="text-black text-base md:text-[18px] text-left flex-1 font-sans">
                         Primesphere Publication is a trusted, open-access, peer-reviewed publishing authority supporting researchers, students, and scholars worldwide since 2014. We provide services like journal selection, Crossref & DOI indexing, and publication in indexed databases such as SCOPUS, Web of Science, and Google Scholar. Our expertise spans diverse research fields, ensuring high-quality and tailored publishing solutions.
                     </p>
                 </div>
@@ -30,11 +30,11 @@ const Aboutus = () => {
                 </div>
             </div>
             {/* research excellence */}
-            <div className="w-full px-16 py-12">
+            <div className="w-full px-6 custom:px-16 py-12">
                 <div className="py-2 border-l-4 border-l-red-600 pl-3 mb-3">
-                    <h1 className="text-3xl font-bold text-black">Research Excellence</h1>
+                    <h1 className=" text-2xl custom:text-3xl font-bold text-black font-serif">Research Excellence</h1>
                 </div>
-                <p className="text-wrap text-lg ">
+                <p className="text-wrap text-base font-sans ">
                     Prime Sphere Publication is dedicated to prioritizing authors' research articles by providing a thorough review process conducted by our expert editors and peers in the respective fields of study. As a reputable open-access, double-blind, peer-reviewed publishing authority, we ensure high acceptance rates for authors and researchers globally.
                     <br /><br />
                     We are committed to fostering inclusion, equality, accessibility, and diversity within the realm of scholarly publication. We have collaborated with prestigious research database journals like SCOPUS (Elsevier), Web of Science, UGC, Google Scholar, PubMed, ABDC, DOAJ, and SJR, among others. Our services include Crossref and DOI indexing, which enhances the visibility and impact of authors’ work, boosting journal impact factor ratios.

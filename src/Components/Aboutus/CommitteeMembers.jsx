@@ -12,9 +12,9 @@ The structure of the committee adapts to the nature of events, with roles such a
   };
 
   return (
-    <div className="w-full px-16 py-12 ">
+    <div className="w-full px-6 custom:px-16 py-12 ">
       <div className="py-4 border-l-4 border-l-red-600 pl-3 mb-6">
-        <h1 className="text-3xl font-bold text-black">{content.heading}</h1>
+        <h1 className="text-2xl custom:text-3xl font-bold text-black font-serif">{content.heading}</h1>
       </div>
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-shrink-0">
@@ -25,7 +25,7 @@ The structure of the committee adapts to the nature of events, with roles such a
           />
         </div>
         <div>
-          <p className="text-base text-gray-700 leading-relaxed whitespace-pre-line">
+          <p className="text-base text-gray-700 leading-relaxed whitespace-pre-line font-sans">
             {content.description}
           </p>
         </div>

@@ -8,13 +8,18 @@ module.exports = {
       screens: {
         custom: '530px', 
       },
-      backgroundColor:{
-        primary:'',
+      backgroundColor: {
+        primary: '',
       },
-      textColor:{
-        primary:''
-      }
+      textColor: {
+        primary: '',
+      },
+      fontFamily: {
+        sans: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'], // For general text 
+        serif: ['Playfair Display', 'Georgia', 'serif'], // For headers
+        mono: ['Source Code Pro', 'Courier New', 'monospace'], // sub header
+      },
     },
   },
   plugins: [],
-}
+};

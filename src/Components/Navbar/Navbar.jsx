@@ -84,12 +84,16 @@ const Navbar = () => {
             </div>
             {isActive && (
                 <div className="fixed top-0 right-0 h-screen w-full custom:w-[70%] bg-white shadow-lg z-50 flex flex-col justify-start py-10 px-6 space-y-6 md:hidden font-semibold">
-                    <Link to="/services" className="text-lg border-b-2 pb-2" onClick={() => setActive(false)}>
+                    <Link
+                        to="/services"
+                        className="text-lg border-b-2 pb-2 border-b-red-500 hover:text-red-500"
+                        onClick={() => setActive(false)}
+                    >
                         Services
                     </Link>
                     <div className="w-full">
                         <button
-                            className="w-full flex justify-start items-center text-lg pb-2 border-b-2"
+                            className="w-full flex justify-start items-center text-lg pb-2 border-b-2 border-b-red-500 hover:text-red-500"
                             onClick={() => setDropdownActive(!isDropdownActive)}
                         >
                             Publication
@@ -98,33 +102,62 @@ const Navbar = () => {
                             </span>
                         </button>
                         {isDropdownActive && (
-                            <div className="flex flex-col space-y-2 ml-4 text-sm">
-                                <Link to="/about-publication" onClick={() => setActive(false)}>
+                            <div className="flex flex-col space-y-2 ml-4 text-base pt-4">
+                                <Link
+                                    to="/about-publication"
+                                    className="hover:text-red-500"
+                                    onClick={() => setActive(false)}
+                                >
                                     About Publication
                                 </Link>
-                                <Link to="/journals" onClick={() => setActive(false)}>
+                                <Link
+                                    to="/journals"
+                                    className="hover:text-red-500"
+                                    onClick={() => setActive(false)}
+                                >
                                     Journals
                                 </Link>
-                                <Link to="/call-for-paper" onClick={() => setActive(false)}>
+                                <Link
+                                    to="/call-for-paper"
+                                    className="hover:text-red-500"
+                                    onClick={() => setActive(false)}
+                                >
                                     Call For Paper
                                 </Link>
-                                <Link to="/privacy-policy" onClick={() => setActive(false)}>
+                                <Link
+                                    to="/privacy-policy"
+                                    className="hover:text-red-500"
+                                    onClick={() => setActive(false)}
+                                >
                                     Privacy Policy
                                 </Link>
-                                <Link to="/refund-policy" onClick={() => setActive(false)}>
+                                <Link
+                                    to="/refund-policy"
+                                    className="hover:text-red-500"
+                                    onClick={() => setActive(false)}
+                                >
                                     Refund Policy
                                 </Link>
                             </div>
                         )}
                     </div>
-                    <Link to="/aboutus" className="text-lg border-b-2 pb-2" onClick={() => setActive(false)}>
+                    <Link
+                        to="/aboutus"
+                        className="text-lg border-b-2 pb-2 border-b-red-500 hover:text-red-500"
+                        onClick={() => setActive(false)}
+                    >
                         About Us
                     </Link>
-                    <Link to="/contactus" className="text-lg border-b-2 pb-2" onClick={() => setActive(false)}>
+                    <Link
+                        to="/contactus"
+                        className="text-lg border-b-2 pb-2 border-b-red-500 hover:text-red-500"
+                        onClick={() => setActive(false)}
+                    >
                         Contact Us
                     </Link>
                 </div>
             )}
+
 
         </div>
     );

@@ -1,17 +1,18 @@
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-
-.no-scrollbar {
-    -ms-overflow-style: none;  
-    scrollbar-width: none; 
-}
-
+/* Hide scrollbar but allow scrolling */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
 .bg-servicehero{
     background-image: url('../public/Services/servicehero.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* filter: brightness(0.75); */
 }
 
 .bg-contact{
@@ -20,3 +21,18 @@
     background-size: cover;
     background-position: center;
 }
+
+@keyframes titleOpen {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.animate-titleOpen {
+    animation: titleOpen 0.5s ease-in-out;
+}
+

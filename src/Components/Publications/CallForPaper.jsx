@@ -6,13 +6,13 @@ const CallForPaper=()=>{
         Our process is clear, thorough, and user-friendly, designed to make it easy for authors to navigate. Our editorial team and experienced peer-review panel carefully assess the articles submitted by authors. Any discrepancies or formatting issues are promptly corrected to meet the standards of the chosen journal. We provide tailored guidance and support from the initial submission to final publication.
         
         We take pride in making the publication process as organized and professional as possible, so authors do not need to worry about journal selection, editing, or formatting. PrimeSphere ensures every step is seamless and efficient. Additionally, we offer online webinars for clients to attend, providing further support. If authors are ready to share their ideas with us, we can help expedite the publication of their research paper in various indexed journals. We are committed to working diligently to ensure the success of every article submitted to our platform.`,
-        image: "/images/call-for-paper.jpg", // Replace with actual image URL
+        image: "/images/call-for-paper.jpg", 
       };
     
       return (
         <div className="w-full px-8 md:px-16 py-12 pt-32">
-          <div className="py-4 border-l-8 border-l-red-400 pl-3 mb-6">
-            <h1 className="text-xl md:text-3xl font-bold text-black">{content.heading}</h1>
+          <div className="py-4 border-l-8 border-l-red-500 pl-3 mb-6">
+            <h1 className="text-xl md:text-3xl font-bold text-black font-serif">{content.heading}</h1>
           </div>
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* <div className="flex-shrink-0">
@@ -23,7 +23,7 @@ const CallForPaper=()=>{
               />
             </div> */}
             <div>
-              <p className="text-base text-gray-700 leading-relaxed whitespace-pre-line">
+              <p className="text-base text-gray-700 leading-relaxed whitespace-pre-line font-sans">
                 {content.description}
               </p>
             </div>

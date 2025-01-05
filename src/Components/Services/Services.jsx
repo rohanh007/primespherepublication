@@ -61,8 +61,8 @@ const ServiceCard = ({ title, description, icon }) => {
       <div className="flex  p-4">
         <div className="text-2xl sm:text-4xl text-red-500 mr-4">{icon}</div>
         <div>
-          <h3 className="text-lg sm:text-xl tracking-wide font-bold text-gray-800">{title}</h3>
-          <p className="text-gray-600 mt-2">{description}</p>
+          <h3 className="text-lg sm:text-xl tracking-wide font-bold text-gray-800 font-serif">{title}</h3>
+          <p className="text-gray-600 mt-2 font-sans">{description}</p>
         </div>
       </div>
     </div>
@@ -77,11 +77,11 @@ const ServicesPage = () => {
   return (
     <div className="w-full min-h-screen relative pt-12">
       {/* Summary section */}
-      <div className="flex flex-col items-start justify-center text-center w-full h-[80vh] sm:h-[70vh] px-4 sm:px-16 bg-servicehero ">
+      <div className="flex flex-col items-start justify-center text-center w-full h-[80vh] sm:h-[70vh] px-4 sm:px-16  bg-servicehero ">
         <div className='py-2 border-l-8 border-l-red-600 pl-4 mb-2'>
-          <h1 className="text-2xl sm:text-4xl font-bold text-black ">Our Services</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold text-white font-serif ">Our Services</h1>
         </div>
-        <p className="text-black  max-w-full sm:max-w-[80%] text-sm sm:text-[18px] text-left">
+        <p className="text-white font-sans tracking-wide  max-w-full sm:max-w-[80%] text-sm sm:text-[18px] text-left">
           Primesphere Publication offers a wide range of services, including research article publication, research guidance, conference proceedings, DOI services, Open Journal Systems (OJS), web development, digital marketing, copy editing, and formatting, among others. We are dedicated to providing professional solutions for researchers and collaborators.
         </p>
       </div>
@@ -109,7 +109,7 @@ const ServicesPage = () => {
       {/* Other services section */}
       <div className="container sm:mx-auto px-4 sm:px-16 py-8">
         <div className='border-l-8 border-l-red-600 pl-4 py-2 mb-9'>
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">Other Services</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 font-serif">Other Services</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 md:px-0">
           {otherServices.map((service) => (

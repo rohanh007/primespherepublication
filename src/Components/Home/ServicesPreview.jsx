@@ -47,9 +47,9 @@ const ServicesPreview = () => {
         <div className="w-full flex flex-col md:flex-row gap-5 md:px-5">
           <div className="w-[100%] md:w-[70%] flex flex-col gap-3">
             <div className="py-2 border-l-8 border-l-red-600 pl-4">
-              <h1 className="text-xl custom:text-4xl font-bold tracking-wide">What we Provide</h1>
+              <h1 className="text-xl custom:text-4xl font-bold font-serif tracking-wide">What We Provide</h1>
             </div>
-            <p className="text-wrap text-sm">Primesphere is a trusted provider of publication and consultation services, specializing in helping scholars publish their articles in leading research database journals, including SCOPUS, Web of Science, and PubMed.</p>
+            <p className="text-wrap text-sm font-sans tracking-wide">Primesphere is a trusted provider of publication and consultation services, specializing in helping scholars publish their articles in leading research database journals, including SCOPUS, Web of Science, and PubMed.</p>
           </div>
           <div className="w-full md:w-[30%] flex justify-start md:justify-end items-center md:px-2"><Link to='/services' className="border border-red-500 rounded-lg bg-red-500 text-white max-w-[150px] text-center px-2 py-1 font-semibold ">Know More</Link></div>
         </div>

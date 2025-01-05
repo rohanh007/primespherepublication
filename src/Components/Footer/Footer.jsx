@@ -25,7 +25,7 @@ const Footer = () => {
     // <!-- Footer section with social media icons and newsletter sign-up -->
     <footer
       class="flex flex-col items-center justify-center text-center text-surface dark:bg-neutral-700 dark:text-white border-t-2 mt-12 shadow-lg pt-6 relative">
-      <div class="container flex flex-col md:flex-row items-center justify-between px-24 py-6">
+      <div class="container flex flex-col md:flex-row items-center justify-between px-8 custom:px-24 py-6">
         {/* <!-- Social media icons container --> */}
         <div class="mb-6 flex flex-row justify-center space-x-2">
           <Link
@@ -135,7 +135,7 @@ const Footer = () => {
 
         {/* <!-- Newsletter sign-up input field --> */}
         <div className="flex flex-col items-center w-full md:w-auto">
-          <h3 className="text-lg font-semibold mb-2">Subscribe to our Newsletter</h3>
+          <h3 className="text-base custom:text-lg font-semibold mb-2">Subscribe to our Newsletter</h3>
           <form onSubmit={handleNewsletter} className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
             <input
               type="email"

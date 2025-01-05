@@ -53,9 +53,9 @@ const ContactUs = () => {
     <div className="h-auto md:h-[94vh] bg-contact relative top-10">
       <div className="bg-red-500/55 flex flex-col md:flex-row justify-between h-fit md:h-[94vh] border">
         {/* Left Side: Contact Form */}
-        <div className="w-full md:w-[50%] bg-white flex items-center justify-center p-4">
+        <div className="w-full md:w-[50%] bg-white flex items-center justify-center p-2 custom:p-4">
           <form className="w-full p-12 " onSubmit={handleSubmit}>
-            <h2 className="text-2xl font-bold text-black mb-4">Contact Us</h2>
+            <h2 className="text-2xl font-bold font-serif text-black mb-4">Contact Us</h2>
 
             <div className="mb-2">
               <label htmlFor="name" className="block text-sm font-medium text-black">
@@ -134,31 +134,31 @@ const ContactUs = () => {
         {/* Right Side: Company Details */}
         <div className="w-full md:w-[50%] flex flex-col items-center justify-center gap-4 md:gap-6 px-12 py-8 backdrop-blur-sm  rounded-lg shadow-lg">
           <div className="text-center space-y-6 ">
-            <h2 className="text-4xl text-white font-extrabold tracking-wide">Prime Sphere</h2>
-            <p className="text-gray-200 text-lg text-left leading-relaxed">
+            <h2 className="text-3xl custom:text-4xl text-white font-serif font-extrabold tracking-wide">Prime Sphere</h2>
+            <p className="text-gray-200 text-base custom:text-lg text-left leading-relaxed font-sans">
               At Prime Sphere, we are committed to delivering the best support and services to our clients. We offer quick responses, solutions, and expertise to ensure your satisfaction. Our team is always here to help with any questions or concerns you may have.
               <br />
               Feel free to reach out to us anytime <br/><br/>— we look forward to hearing from you!
             </p>
           </div>
 
-          <div className="space-y-4">
-            <div className="flex items-center justify-start space-x-4">
+          <div className="space-y-3 custom:space-y-4">
+            <div className="flex items-center justify-start space-x-2 custom:space-x-4">
               <FaPhone className="text-2xl text-white" />
               <Link
                 to="#"
                 onClick={handlePhoneClick}
-                className="text-white hover:text-gray-200 hover:underline text-lg"
+                className="text-white hover:text-gray-200 hover:underline text-base custom:text-lg font-sans"
               >
                 +91 8275592369
               </Link>
             </div>
-            <div className="flex items-center justify-start space-x-4">
+            <div className="flex items-center justify-start space-x-2  custom:space-x-4">
               <FaEnvelope className="text-2xl text-white" />
               <Link
                 to="#"
                 onClick={handleEmailClick}
-                className="text-white hover:text-gray-200 hover:underline text-lg"
+                className="text-white hover:text-gray-200 hover:underline text-base custom:text-lg font-sans"
               >
                 primespherepublication@gmail.com
               </Link>

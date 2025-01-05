@@ -11,10 +11,10 @@ const AboutPublications=()=>{
                     </svg>
                 </div>
       <div className="max-w-6xl mx-auto text-center relative z-20">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-3xl font-serif sm:text-4xl font-bold text-gray-900 mb-6">
           Welcome to Prime Sphere Publication
         </h2>
-        <p className="text-base sm:text-lg text-gray-700 mb-10 text-start">
+        <p className="text-base font-sans sm:text-lg text-gray-700 mb-10 text-start">
           Prime Sphere Publication is a leading provider of scholarly article
           publishing and consultation services. We assist researchers in getting
           their work published in top-tier journals indexed in databases like
@@ -28,26 +28,26 @@ const AboutPublications=()=>{
           <img
             src="/Aboutus/committee.webp"
             alt="Publication Process"
-            className="rounded-lg shadow-lg max-w-full h-96"
+            className="rounded-lg shadow-lg max-w-full h-auto"
           />
         </div>
             </div>
         <div className="max-w-2xl   space-y-6 text-left w-full md:w-1/2">
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base font-sans sm:text-lg text-gray-700">
             Our expert panel evaluates your articles meticulously, ensuring they
             align with the standards of peer-reviewed journals. We offer complete
             support in the development and submission of articles to SCI and SCIE
             journals. Our services guarantee high-quality editorial support and
             peer reviews to give your research the attention it deserves.
           </p>
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base font-sans sm:text-lg text-gray-700">
             With our extensive experience, we help expedite the publication
             process, ensuring your article reaches the right audience through
             journals with high impact factors. Whether you’re from arts, science,
             medicine, engineering, management, or technology, we’re here to
             support you in every step of the research publication journey.
           </p>
-          <p className="text-base sm:text-lg text-gray-700">
+          <p className="text-base font-sans sm:text-lg text-gray-700">
             Our end-to-end consultation services cover everything from article
             development to final publication in top research databases. Let us
             help you get your scholarly work published in journals that matter.

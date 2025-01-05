@@ -42,9 +42,9 @@ const ScopesAndOpportunities = () => {
   ];
 
   return (
-    <div className="w-full px-16 py-12 bg-gray-50">
+    <div className="w-full px-6 custom:px-16 py-12 bg-gray-50">
       <div className="py-4 border-l-4 border-l-red-600 pl-3 mb-6">
-        <h1 className="text-3xl font-bold text-black">Scopes & Opportunities</h1>
+        <h1 className="text-3xl font-bold text-black font-serif">Scopes and Opportunities</h1>
       </div>
       <div className="flex flex-col gap-10">
         {content.map((section, index) => (
@@ -60,10 +60,10 @@ const ScopesAndOpportunities = () => {
               />
             </div> */}
             <div>
-              <h2 className="text-2xl font-semibold text-red-600 mb-2">
+              <h2 className="text-2xl font-semibold text-red-600 mb-2 font-serif">
                 {section.heading}
               </h2>
-              <p className="text-base text-gray-700 whitespace-pre-line leading-relaxed">
+              <p className="text-base text-gray-700 whitespace-pre-line leading-relaxed font-sans">
                 {section.description}
               </p>
             </div>
