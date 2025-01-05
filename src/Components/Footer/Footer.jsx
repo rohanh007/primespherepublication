@@ -24,10 +24,10 @@ const Footer = () => {
   return (
     // <!-- Footer section with social media icons and newsletter sign-up -->
     <footer
-      class="flex flex-col items-center justify-center text-center text-surface dark:bg-neutral-700 dark:text-white border-t-2 mt-12 shadow-lg pt-6 relative">
+      class="flex flex-col items-center justify-center text-center text-surface dark:bg-neutral-700 dark:text-white border-t-2 mt-12 shadow-lg relative">
       <div class="container flex flex-col md:flex-row items-center justify-between px-8 custom:px-24 py-6">
         {/* <!-- Social media icons container --> */}
-        <div class="mb-6 flex flex-row justify-center space-x-2">
+        <div class="mb-0 flex flex-row justify-center space-x-2">
           <Link
             href="#!"
             type="button"

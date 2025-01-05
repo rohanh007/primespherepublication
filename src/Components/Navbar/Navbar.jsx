@@ -7,6 +7,13 @@ const Navbar = () => {
     const [isActive, setActive] = useState(false);
     const [isDropdownActive, setDropdownActive] = useState(false);
 
+    // Handle dropdown close after 10 seconds
+    const handleClose = () => {
+        setTimeout(() => {
+            setDropdownActive(false);
+        }, 10000); // Close the dropdown after 10 seconds
+    };
+
     return (
         <div className="w-full flex flex-col fixed top-0 z-50">
             <div className="flex justify-between items-center py-2 px-5 md:px-24 bg-white shadow-md">
@@ -24,7 +31,7 @@ const Navbar = () => {
                     <div className="relative group">
                         <button
                             className="hover:text-red-500 text-lg flex items-center"
-                            onClick={() => setDropdownActive(!isDropdownActive)}
+                            onClick={() => {handleClose(); setDropdownActive(!isDropdownActive)}}
                         >
                             Publication
                             {/* <span className="ml-2">
@@ -36,30 +43,40 @@ const Navbar = () => {
                                 <Link
                                     to="/about-publication"
                                     className="block px-4 py-2 hover:bg-gray-200"
+                                    onClick={() => setDropdownActive(false)}
+
                                 >
                                     About Publication
                                 </Link>
                                 <Link
                                     to="/journals"
                                     className="block px-4 py-2 hover:bg-gray-200"
+                                    onClick={() => setDropdownActive(false)}
+
                                 >
                                     Journals
                                 </Link>
                                 <Link
                                     to="/call-for-paper"
                                     className="block px-4 py-2 hover:bg-gray-200"
+                                    onClick={() => setDropdownActive(false)}
+
                                 >
                                     Call For Paper
                                 </Link>
                                 <Link
                                     to="/privacy-policy"
                                     className="block px-4 py-2 hover:bg-gray-200"
+                                    onClick={() => setDropdownActive(false)}
+
                                 >
                                     Privacy Policy
                                 </Link>
                                 <Link
                                     to="/refund-policy"
                                     className="block px-4 py-2 hover:bg-gray-200"
+                                    onClick={() => setDropdownActive(false)}
+
                                 >
                                     Refund Policy
                                 </Link>
@@ -94,7 +111,7 @@ const Navbar = () => {
                     <div className="w-full">
                         <button
                             className="w-full flex justify-start items-center text-lg pb-2 border-b-2 border-b-red-500 hover:text-red-500"
-                            onClick={() => setDropdownActive(!isDropdownActive)}
+                            onClick={() => {setDropdownActive(!isDropdownActive)}}
                         >
                             Publication
                             <span className="ml-2">
@@ -157,8 +174,6 @@ const Navbar = () => {
                     </Link>
                 </div>
             )}
-
-
         </div>
     );
 };
