@@ -1,7 +1,26 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleNewsletter = async (e) => {
+    e.preventDefault(); // Prevent page reload
+    setTimeout(() => {
+      setMessage("");
+    }, 8000)
+    setMessage(""); // Clear previous messages
+    try {
+      const response = await axios.post("http://localhost:4300/api/newsletter", { email });
+      setMessage("Subscription successful! Thank you for subscribing.");
+      setEmail("");
+    } catch (error) {
+      console.error(error);
+      setMessage("Failed to subscribe. Please try again later.");
+    }
+  };
   return (
     // <!-- Footer section with social media icons and newsletter sign-up -->
     <footer
@@ -113,42 +132,27 @@ const Footer = () => {
           {/* </Link> */}
         </div>
 
-        {/* <!-- Newsletter sign-up form --> */}
-        <div>
-          <form action="">
-            <div
-              class="flex  flex-col md:flex-row justify-center gap-4 ">
-              <div class="md:mb-6 md:ms-auto">
-                <p>
-                  <strong>Sign up for our newsletter</strong>
-                </p>
-              </div>
 
-              {/* <!-- Newsletter sign-up input field --> */}
-              <div class="relative md:mb-6" data-twe-input-wrapper-init>
-                <input
-                  type="email"
-                  class="peer w-full border-b-2 bg-transparent px-3 py-[0.32rem] leading-[1.6] transition-all duration-200 ease-linear focus:outline-none focus:border-b-[3px] focus:border-primary"
-                  id="exampleFormControlInputEmail"
-                  placeholder=""
-                />
-                <label
-                  for="exampleFormControlInputEmail"
-                  class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary"
-                >
-                  Email address
-                </label>
-              </div>
-
-
-              {/* <!-- Newsletter sign-up submit button --> */}
-              <div class="mb-6 md:me-auto">
-                <Link to='' className='border py-2 px-3 rounded-md bg-red-500 text-white'>
-                  Subscribe
-                </Link>
-              </div>
-            </div>
+        {/* <!-- Newsletter sign-up input field --> */}
+        <div className="flex flex-col items-center w-full md:w-auto">
+          <h3 className="text-lg font-semibold mb-2">Subscribe to our Newsletter</h3>
+          <form onSubmit={handleNewsletter} className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              required
+              className="p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+            />
+            <button
+              type="submit"
+              className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-600"
+            >
+              Subscribe
+            </button>
           </form>
+          {message && <p className="mt-2 text-sm text-red-500">{message}</p>}
         </div>
 
         {/* <!-- Copyright information --> */}
