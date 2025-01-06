@@ -1,7 +1,7 @@
 {
   "name": "psp",
   "version": "0.1.0",
-  "homepage": "https://rohanh007.github.io/primespherepublication/",
+  "homepage": "https://rohanh007.github.io/primespherepublication",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
