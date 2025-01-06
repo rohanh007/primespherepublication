@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpsp=self.webpackChunkpsp||[]).push([[322],{322:(s,e,n)=>{n.r(e),n.d(e,{default:()=>u});var p=n(43),t=n(265);const u=()=>{const{pathname:s}=(0,t.zy)();return(0,p.useEffect)((()=>{window.scrollTo(0,0)}),[s]),null}}}]);
+//# sourceMappingURL=322.9a519b70.chunk.js.map
