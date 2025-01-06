@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import slider_1 from "../../assets/Slider/slider_1.webp";
-import slider_2 from "../../assets/Slider/slide_2.webp";
-import slider_3 from "../../assets/Slider/slide_3.webp";
+import slider_1 from "../../public/Slider/slider_1.webp";
+import slider_2 from "../../public/Slider/slide_2.webp";
+import slider_3 from "../../public/Slider/slide_3.webp";
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
