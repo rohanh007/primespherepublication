@@ -7,10 +7,11 @@ const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-   "/Slider/slider_1.webp",
-   "/Slider/slide_2.webp",
-   "/Slider/slide_3.webp",
+    `${process.env.PUBLIC_URL}/Slider/slider_1.webp`,
+    `${process.env.PUBLIC_URL}/Slider/slide_2.webp`,
+    `${process.env.PUBLIC_URL}/Slider/slide_3.webp`,
   ];
+  
 
   useEffect(() => {
     const timer = setTimeout(() => {
