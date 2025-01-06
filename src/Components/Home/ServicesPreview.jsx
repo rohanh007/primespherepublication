@@ -4,7 +4,7 @@ import Servicecard from "../Services/Servicecard";
 const ServicesPreview = () => {
   const services = [
     {
-      serviceIcon: "../../public/Services/guidance.png",
+      serviceIcon: "/Services/guidance.png",
       serviceTitle: "Research Guidance",
       serviceDescription: "We have a panel of experts who will analyze your article and compare it with those in our peer-reviewed journals to provide end-to-end research consultation services for scholarly research articles and get them published in world-renowned research database journals",
       additionalInfo: {
@@ -15,7 +15,7 @@ const ServicesPreview = () => {
       }
     },
     {
-      serviceIcon: "../../public/Services/information.png",
+      serviceIcon: "/Services/information.png",
       serviceTitle: "Research Publication",
       serviceDescription: "Green-publication offers research article publication service to our authors and allows them to publish their research in journals available in well-established databases.",
       additionalInfo: {
@@ -27,7 +27,7 @@ const ServicesPreview = () => {
       }
     },
     {
-      serviceIcon: "../../public/Services/speech.png",
+      serviceIcon: "/Services/speech.png",
       serviceTitle: "Conference",
       serviceDescription: "Authors are welcome to discover and register for Green Publications events, including virtual and hybrid conference proceedings, to discuss the article’s loopholes and quality-related issues.",
       additionalInfo: {

@@ -13,7 +13,7 @@ const AboutUsPreview = () => {
                   <Link to='/aboutus' className="border border-red-500 rounded-lg bg-red-500 text-white max-w-[150px] text-center py-[4px] font-semibold my-2 font-sans">Know More</Link>
                 </div>
                 <div className="w-full lg:w-1/2 flex flex-col items-center ">
-                    <img className="custom:max-w-[450px] max-h-96 " src="../../public/Home/aboutpreviewsmall.webp" alt="prime sphere " loading="lazy" />
+                    <img className="custom:max-w-[450px] max-h-96 " src="/Home/aboutpreviewsmall.webp" alt="prime sphere " loading="lazy" />
                 </div>
         </div>
     )
