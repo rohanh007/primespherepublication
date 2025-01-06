@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { IoSearch } from "react-icons/io5";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const JournalList = () => {
   const [query, setQuery] = useState("");
   const [journals, setJournals] = useState([]);
   const [filteredJournals, setFilteredJournals] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("http://localhost:4300/api/journallist")
