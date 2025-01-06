@@ -7,11 +7,11 @@ const Navbar = () => {
     const [isActive, setActive] = useState(false);
     const [isDropdownActive, setDropdownActive] = useState(false);
 
-    // Handle dropdown close after 10 seconds
+    
     const handleClose = () => {
         setTimeout(() => {
             setDropdownActive(false);
-        }, 10000); // Close the dropdown after 10 seconds
+        }, 7000); 
     };
 
     return (

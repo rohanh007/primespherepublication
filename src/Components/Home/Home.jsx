@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="w-full h-auto relative scrollbar-hide">
       {/* <Navbar/> */}
-      <div className="flex flex-col gap-3 w-[80%] sm:w-[50%] absolute z-20 custom:top-[6%] top-[4%] lg:top-[10%]  left-[7%]">
+      <div className="flex flex-col gap-3 w-[80%] sm:w-[50%] absolute z-20 custom:top-[6%] top-[3%] lg:top-[12%]  left-[7%]">
         <div className="border-l-8 border-l-red-500 pl-5 py-3">
           <h1 className="text-2xl custom:text-4xl font-bold font-serif text-white">Prime Sphere Publication Services</h1>
         </div>

@@ -81,7 +81,7 @@ const ServicesPage = () => {
         <div className='py-2 border-l-8 border-l-red-600 pl-4 mb-2'>
           <h1 className="text-2xl sm:text-4xl font-bold text-white font-serif ">Our Services</h1>
         </div>
-        <p className="text-white font-sans tracking-wide  max-w-full sm:max-w-[80%] text-sm sm:text-[18px] text-left">
+        <p className="text-white font-sans tracking-wide  max-w-full sm:max-w-[70%] text-sm sm:text-[18px] text-left">
           Primesphere Publication offers a wide range of services, including research article publication, research guidance, conference proceedings, DOI services, Open Journal Systems (OJS), web development, digital marketing, copy editing, and formatting, among others. We are dedicated to providing professional solutions for researchers and collaborators.
         </p>
       </div>

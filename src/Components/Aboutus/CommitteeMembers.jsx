@@ -8,7 +8,7 @@ const CommitteeMembers = () => {
 Open communication with committee members is a cornerstone of our approach, enabling researchers to achieve exceptional results. The committee actively supports authors in selecting reference journals, refining manuscripts, and meeting indexing requirements. They also share resources, insights, and best practices worldwide through workshops, webinars, and conferences.
 
 The structure of the committee adapts to the nature of events, with roles such as Chair, Deputy Chair, and members assigned distinct responsibilities. Their primary focus is guiding authors to create robust research articles and assisting in the journal selection process, ensuring success at every step.`,
-    image: "/Aboutus/primespherecompanyai.webp", // Replace with the actual image path
+    image: "/Aboutus/primespherecompanyai.webp", 
   };
 
   return (
@@ -20,6 +20,7 @@ The structure of the committee adapts to the nature of events, with roles such a
         <div className="flex-shrink-0">
           <img
             src={content.image}
+            loading="lazy"
             alt={content.heading}
             className="w-full max-w-md rounded-lg shadow-lg"
           />

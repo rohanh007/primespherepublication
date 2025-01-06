@@ -18,6 +18,7 @@ import CallForPaper from './Components/Publications/CallForPaper.jsx';
 import PrivacyPolicy from './Components/Publications/PrivacyPolicy.jsx';
 import RefundPolicy from './Components/Publications/RefundPolicy.jsx';
 import JournalDetail from './Components/Publications/JournalDetail.jsx';
+import Assistant from './Components/FixedContact/Assistant.jsx';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
          {/* journal details route  */}
         <Route path="/journal/:id" element={<JournalDetail/>} />
       </Routes>
+      <Assistant/>
       <Footer/>
       </BrowserRouter>
          

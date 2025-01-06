@@ -23,6 +23,7 @@ const DiversityInclusion = () => {
                         src="/Aboutus/d&i.webp"
                         alt="Diversity and Inclusion"
                         className="w-full h-auto rounded-lg shadow-lg"
+                        loading="lazy"
                     />
                 </div>
             </div>

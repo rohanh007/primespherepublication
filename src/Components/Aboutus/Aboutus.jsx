@@ -6,7 +6,7 @@ import CommitteeMembers from "./CommitteeMembers";
 const Aboutus = () => {
     return (
         <div className=" w-full ">
-            <div className="flex flex-col md:flex-row items-center  md:justify-center h-auto md:h-[70vh] bg-red-50 pb-14 md:pb-0 md:pt-14 pt-28 px-6 custom:px-16 relative overflow-hidden">
+            <div className="flex flex-col md:flex-row items-center  md:justify-center h-auto md:h-[70vh] bg-red-50 pb-14 md:pb-0 md:pt-14 pt-28  px-6 custom:px-16 relative overflow-hidden">
                 <div className="flex flex-col max-w-full md:max-w-[60%] relative z-20 ">
                     <div className='py-2 border-l-8 border-l-red-600 pl-4 mb-3'>
                         <h1 className=" text-2xl md:text-4xl font-bold text-black font-serif">About us</h1>
@@ -16,8 +16,8 @@ const Aboutus = () => {
                     </p>
                 </div>
 
-                <div className="max-w-full md:max-w-[40%] relative z-20 pt-4 flex justify-center p-6">
-                    <img src='/Aboutus/aboutuspage.webp' className="flex-1" />
+                <div className="max-w-full md:max-w-[40%] relative z-20 pt-14 flex justify-center p-6">
+                    <img src='/Aboutus/aboutuspage.webp'  loading="lazy" alt="about us"  className="flex-1 "  />
                 </div>
 
                 <div className="absolute -right-[20%] top-10 h-[60vh] max-w-2xl z-10 hidden md:flex ">

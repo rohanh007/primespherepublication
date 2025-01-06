@@ -30,7 +30,7 @@ const JournalList = () => {
   }, [query, journals]);
 
   return (
-    <div className="w-full px-4 sm:px-8 md:px-16 pt-20">
+    <div className="w-full px-4 sm:px-8 md:px-16 pt-28">
       {/* Search Bar */}
       <div className="relative flex items-center justify-center mb-6">
         <input
@@ -40,7 +40,7 @@ const JournalList = () => {
           onChange={(e) => setQuery(e.target.value)}
           className="w-full sm:w-[70%] lg:w-[50%] px-4 py-2 border border-gray-300 rounded-md focus:ring focus:ring-indigo-300 outline-none"
         />
-        <IoSearch className="absolute right-[10%] sm:right-[17%] lg:right-[25%] text-gray-500" size={24} />
+        <IoSearch className="absolute right-[5%] sm:right-[17%] lg:right-[27%] text-gray-500" size={24} />
       </div>
 
       {/* Journals Grid */}
@@ -76,7 +76,7 @@ const JournalList = () => {
                 >
                   Details
                 </Link>
-              </div>
+              </div>  
             </div>
           ))
         ) : (
