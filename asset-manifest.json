@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/primespherepublication/static/css/main.b73bf60a.css",
-    "main.js": "/primespherepublication/static/js/main.d03a92df.js",
-    "static/js/892.d19c7a4e.chunk.js": "/primespherepublication/static/js/892.d19c7a4e.chunk.js",
+    "main.js": "/primespherepublication/static/js/main.abfb8788.js",
+    "static/js/892.2662cd68.chunk.js": "/primespherepublication/static/js/892.2662cd68.chunk.js",
     "static/js/96.19e6b3ec.chunk.js": "/primespherepublication/static/js/96.19e6b3ec.chunk.js",
     "static/js/982.20c5c94e.chunk.js": "/primespherepublication/static/js/982.20c5c94e.chunk.js",
     "static/js/814.2964d3ab.chunk.js": "/primespherepublication/static/js/814.2964d3ab.chunk.js",
@@ -23,8 +23,8 @@
     "static/media/bg_1.webp": "/primespherepublication/static/media/bg_1.cb19487bd8c544272a7a.webp",
     "index.html": "/primespherepublication/index.html",
     "main.b73bf60a.css.map": "/primespherepublication/static/css/main.b73bf60a.css.map",
-    "main.d03a92df.js.map": "/primespherepublication/static/js/main.d03a92df.js.map",
-    "892.d19c7a4e.chunk.js.map": "/primespherepublication/static/js/892.d19c7a4e.chunk.js.map",
+    "main.abfb8788.js.map": "/primespherepublication/static/js/main.abfb8788.js.map",
+    "892.2662cd68.chunk.js.map": "/primespherepublication/static/js/892.2662cd68.chunk.js.map",
     "96.19e6b3ec.chunk.js.map": "/primespherepublication/static/js/96.19e6b3ec.chunk.js.map",
     "982.20c5c94e.chunk.js.map": "/primespherepublication/static/js/982.20c5c94e.chunk.js.map",
     "814.2964d3ab.chunk.js.map": "/primespherepublication/static/js/814.2964d3ab.chunk.js.map",
@@ -44,6 +44,6 @@
   },
   "entrypoints": [
     "static/css/main.b73bf60a.css",
-    "static/js/main.d03a92df.js"
+    "static/js/main.abfb8788.js"
   ]
 }
