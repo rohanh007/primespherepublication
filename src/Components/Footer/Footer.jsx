@@ -13,7 +13,7 @@ const Footer = () => {
     }, 8000)
     setMessage(""); // Clear previous messages
     try {
-      const response = await axios.post("http://localhost:4300/api/newsletter", { email });
+      const response = await axios.post("https://backendpsp.onrender.com/api/newsletter", { email });
       setMessage("Subscription successful! Thank you for subscribing.");
       setEmail("");
     } catch (error) {

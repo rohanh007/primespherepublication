@@ -31,7 +31,7 @@ const ContactUs = () => {
 
 
     try {
-      const response = await axios.post("http://localhost:4300/api/sendmail", formData);
+      const response = await axios.post("https://backendpsp.onrender.com/api/sendmail", formData);
       setResponseMessage("Thank you for your message. We will get back to you soon!");
     } catch (error) {
       console.error("Error sending message:", error);
