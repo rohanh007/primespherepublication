@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/primespherepublication/static/css/main.b73bf60a.css",
-    "main.js": "/primespherepublication/static/js/main.abfb8788.js",
-    "static/js/892.2662cd68.chunk.js": "/primespherepublication/static/js/892.2662cd68.chunk.js",
+    "main.js": "/primespherepublication/static/js/main.4777ac4d.js",
+    "static/js/892.4b06d0ba.chunk.js": "/primespherepublication/static/js/892.4b06d0ba.chunk.js",
     "static/js/96.19e6b3ec.chunk.js": "/primespherepublication/static/js/96.19e6b3ec.chunk.js",
     "static/js/982.20c5c94e.chunk.js": "/primespherepublication/static/js/982.20c5c94e.chunk.js",
     "static/js/814.2964d3ab.chunk.js": "/primespherepublication/static/js/814.2964d3ab.chunk.js",
-    "static/js/821.45d55a4d.chunk.js": "/primespherepublication/static/js/821.45d55a4d.chunk.js",
+    "static/js/821.6a0b2bf2.chunk.js": "/primespherepublication/static/js/821.6a0b2bf2.chunk.js",
     "static/js/655.56300dd8.chunk.js": "/primespherepublication/static/js/655.56300dd8.chunk.js",
     "static/js/10.225071a7.chunk.js": "/primespherepublication/static/js/10.225071a7.chunk.js",
     "static/js/477.555c061d.chunk.js": "/primespherepublication/static/js/477.555c061d.chunk.js",
@@ -23,12 +23,12 @@
     "static/media/bg_1.webp": "/primespherepublication/static/media/bg_1.cb19487bd8c544272a7a.webp",
     "index.html": "/primespherepublication/index.html",
     "main.b73bf60a.css.map": "/primespherepublication/static/css/main.b73bf60a.css.map",
-    "main.abfb8788.js.map": "/primespherepublication/static/js/main.abfb8788.js.map",
-    "892.2662cd68.chunk.js.map": "/primespherepublication/static/js/892.2662cd68.chunk.js.map",
+    "main.4777ac4d.js.map": "/primespherepublication/static/js/main.4777ac4d.js.map",
+    "892.4b06d0ba.chunk.js.map": "/primespherepublication/static/js/892.4b06d0ba.chunk.js.map",
     "96.19e6b3ec.chunk.js.map": "/primespherepublication/static/js/96.19e6b3ec.chunk.js.map",
     "982.20c5c94e.chunk.js.map": "/primespherepublication/static/js/982.20c5c94e.chunk.js.map",
     "814.2964d3ab.chunk.js.map": "/primespherepublication/static/js/814.2964d3ab.chunk.js.map",
-    "821.45d55a4d.chunk.js.map": "/primespherepublication/static/js/821.45d55a4d.chunk.js.map",
+    "821.6a0b2bf2.chunk.js.map": "/primespherepublication/static/js/821.6a0b2bf2.chunk.js.map",
     "655.56300dd8.chunk.js.map": "/primespherepublication/static/js/655.56300dd8.chunk.js.map",
     "10.225071a7.chunk.js.map": "/primespherepublication/static/js/10.225071a7.chunk.js.map",
     "477.555c061d.chunk.js.map": "/primespherepublication/static/js/477.555c061d.chunk.js.map",
@@ -44,6 +44,6 @@
   },
   "entrypoints": [
     "static/css/main.b73bf60a.css",
-    "static/js/main.abfb8788.js"
+    "static/js/main.4777ac4d.js"
   ]
 }
