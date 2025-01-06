@@ -7,9 +7,9 @@ const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    `${process.env.PUBLIC_URL}/Slider/slider_1.webp`,
-    `${process.env.PUBLIC_URL}/Slider/slide_2.webp`,
-    `${process.env.PUBLIC_URL}/Slider/slide_3.webp`,
+    `../../public/Slider/slider_1.webp`,
+    `../../public/Slider/slide_2.webp`,
+    `../../public/Slider/slide_3.webp`,
   ];
   
 
