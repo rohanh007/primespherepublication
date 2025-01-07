@@ -26,7 +26,7 @@ function App() {
           <Scrolltop />
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/primespherepublication" element={<Home />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/aboutus" element={<Aboutus />} />
             <Route path="/corporate-social-responsibility" element={<CorpSocialResp />} />

@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="w-full flex flex-col fixed top-0 z-50">
             {/* Navbar Header */}
             <div className="flex justify-between items-center py-2 px-5 md:px-24 bg-white shadow-md">
-                <Link to="/">
+                <Link to="/primespherepublication">
                     <img
                         src="/primespherepublication/primesphere_original.png"
                         alt="Primesphere Publication"
