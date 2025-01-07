@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/primespherepublication/static/css/main.b73bf60a.css",
-    "main.js": "/primespherepublication/static/js/main.2bdac9e7.js",
-    "static/js/892.3f4cd4b3.chunk.js": "/primespherepublication/static/js/892.3f4cd4b3.chunk.js",
+    "main.css": "/primespherepublication/static/css/main.04483e0e.css",
+    "main.js": "/primespherepublication/static/js/main.5f7ece17.js",
+    "static/js/892.0fd414b1.chunk.js": "/primespherepublication/static/js/892.0fd414b1.chunk.js",
     "static/js/96.19e6b3ec.chunk.js": "/primespherepublication/static/js/96.19e6b3ec.chunk.js",
-    "static/js/982.b5b1b089.chunk.js": "/primespherepublication/static/js/982.b5b1b089.chunk.js",
+    "static/js/982.4575265e.chunk.js": "/primespherepublication/static/js/982.4575265e.chunk.js",
     "static/js/814.2964d3ab.chunk.js": "/primespherepublication/static/js/814.2964d3ab.chunk.js",
-    "static/js/821.45d55a4d.chunk.js": "/primespherepublication/static/js/821.45d55a4d.chunk.js",
+    "static/js/821.29ce72dc.chunk.js": "/primespherepublication/static/js/821.29ce72dc.chunk.js",
     "static/js/655.c7550677.chunk.js": "/primespherepublication/static/js/655.c7550677.chunk.js",
     "static/js/10.225071a7.chunk.js": "/primespherepublication/static/js/10.225071a7.chunk.js",
     "static/js/477.555c061d.chunk.js": "/primespherepublication/static/js/477.555c061d.chunk.js",
@@ -22,13 +22,13 @@
     "static/media/servicehero.jpeg": "/primespherepublication/static/media/servicehero.b8172fc11da51bb7eea0.jpeg",
     "static/media/bg_1.webp": "/primespherepublication/static/media/bg_1.cb19487bd8c544272a7a.webp",
     "index.html": "/primespherepublication/index.html",
-    "main.b73bf60a.css.map": "/primespherepublication/static/css/main.b73bf60a.css.map",
-    "main.2bdac9e7.js.map": "/primespherepublication/static/js/main.2bdac9e7.js.map",
-    "892.3f4cd4b3.chunk.js.map": "/primespherepublication/static/js/892.3f4cd4b3.chunk.js.map",
+    "main.04483e0e.css.map": "/primespherepublication/static/css/main.04483e0e.css.map",
+    "main.5f7ece17.js.map": "/primespherepublication/static/js/main.5f7ece17.js.map",
+    "892.0fd414b1.chunk.js.map": "/primespherepublication/static/js/892.0fd414b1.chunk.js.map",
     "96.19e6b3ec.chunk.js.map": "/primespherepublication/static/js/96.19e6b3ec.chunk.js.map",
-    "982.b5b1b089.chunk.js.map": "/primespherepublication/static/js/982.b5b1b089.chunk.js.map",
+    "982.4575265e.chunk.js.map": "/primespherepublication/static/js/982.4575265e.chunk.js.map",
     "814.2964d3ab.chunk.js.map": "/primespherepublication/static/js/814.2964d3ab.chunk.js.map",
-    "821.45d55a4d.chunk.js.map": "/primespherepublication/static/js/821.45d55a4d.chunk.js.map",
+    "821.29ce72dc.chunk.js.map": "/primespherepublication/static/js/821.29ce72dc.chunk.js.map",
     "655.c7550677.chunk.js.map": "/primespherepublication/static/js/655.c7550677.chunk.js.map",
     "10.225071a7.chunk.js.map": "/primespherepublication/static/js/10.225071a7.chunk.js.map",
     "477.555c061d.chunk.js.map": "/primespherepublication/static/js/477.555c061d.chunk.js.map",
@@ -43,7 +43,7 @@
     "722.6d485bc3.chunk.js.map": "/primespherepublication/static/js/722.6d485bc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b73bf60a.css",
-    "static/js/main.2bdac9e7.js"
+    "static/css/main.04483e0e.css",
+    "static/js/main.5f7ece17.js"
   ]
 }
