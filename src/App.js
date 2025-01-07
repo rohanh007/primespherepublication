@@ -22,11 +22,11 @@ function App() {
   return (
     <div className="App no-scrollbar">
       <Suspense fallback={<div>Loading...</div>}>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Scrolltop />
           <Navbar />
           <Routes>
-            <Route path="/primespherepublication" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/services" element={<ServicesPage />} />
             <Route path="/aboutus" element={<Aboutus />} />
             <Route path="/corporate-social-responsibility" element={<CorpSocialResp />} />
