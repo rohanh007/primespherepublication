@@ -20,7 +20,7 @@ const DiversityInclusion = () => {
                 {/* Image Section */}
                 <div className="flex-1">
                     <img
-                        src="/Aboutus/d&i.webp"
+                        src="/primespherepublication/Aboutus/d&i.webp"
                         alt="Diversity and Inclusion"
                         className="w-full h-auto rounded-lg shadow-lg"
                         loading="lazy"

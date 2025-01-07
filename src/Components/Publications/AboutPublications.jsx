@@ -26,7 +26,7 @@ const AboutPublications=()=>{
             <div className="w-full md:w-1/2">
             <div className="flex justify-center mb-10 ">
           <img
-            src="/Aboutus/committee.webp"
+            src="/primespherepublication/Aboutus/committee.webp"
             alt="Publication Process"
             loading="lazy"
             className="rounded-lg shadow-lg max-w-full max-h-[420px]"
