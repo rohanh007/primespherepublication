@@ -8,7 +8,7 @@ const JournalList = () => {
   const [filteredJournals, setFilteredJournals] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4300/api/journallist")
+    fetch("https://backendpsp.onrender.com/api/journallist")
       .then((response) => response.json())
       .then((data) => {
         setJournals(data.journallist);
